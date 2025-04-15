@@ -4,7 +4,7 @@
 # How To Use
 
 ```bash
-docker run -d --privileged -p 1701:1701/udp -p 500:500/udp -p 4500:4500/udp --name l2tp --restart=always --env-file /root/docker/l2tp/vpn.env -v /lib/modules:/lib/modules:ro gritsenko/l2tp_without_ipsec:latest
+docker run -d --privileged -p 1701:1701/udp -p 500:500/udp -p 4500:4500/udp --name l2tp --restart=always --env-file ./vpn.env -v /lib/modules:/lib/modules:ro gritsenko/l2tp_without_ipsec:latest
 ```
 
 # File vpn.env
